@@ -1,0 +1,91 @@
+/* utiity classes */
+.h-primary{
+    font-size: 1rem;
+}
+/* Navigation */
+
+#navbar{
+    flex-direction: column;
+}
+
+#navbar ul li a{
+    font-size: 0.9rem;
+    padding: 0 1rem;
+    padding-bottom: 0.5rem;
+}
+
+/* Home */
+
+#home{
+    height: 300px;
+    flex-direction: column;
+}
+
+#home::before{
+    height: 415px;
+}
+
+#home p{
+    font-size: 0.8rem;
+}
+
+#home .btn{
+    padding: 5px 10px;
+    margin: 20px;
+    font-size: 0.8rem;
+    color: whitesmoke;
+    background-color: rgb(41, 27, 30);
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: none;
+    border: 0.8px solid rgb(41, 27, 30);
+    font-family: 'Baloo Thambi 2', cursive;
+    transition: all 0.5s ease-in 0s;
+}
+
+/* Service-Container */
+
+#services{
+    flex-direction: column;
+    /* margin: 1rem 5rem; */
+}
+
+#services .box {
+    border: 2px solid red;
+    padding: 2px;
+    margin: 10px 30px;
+    border-radius: 23px;
+    background-color: rgb(192, 172, 172);
+}
+
+#services .box img{
+    display: block;
+    height: 150px;
+    width: 200px;
+    margin: auto;
+    padding-top: 4px;
+    border-radius: 20px;
+}
+
+/* Client container */
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url(../Images/annie-spratt-0ZPSX_mQ3xI-unsplash.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 62%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#client{
+    flex-wrap: wrap;
+}
+
+#client img{
+    height: 100px;
+    width: 100px;
+   
+} 
+

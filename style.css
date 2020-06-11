@@ -1,0 +1,241 @@
+/* Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Utility Classes */
+.h-primary{
+    font-size: 2rem;
+    padding: 12px;
+    font-family: 'Kalam', cursive;
+}
+
+.textcenter{
+    text-align: center;
+}
+
+.h-secondary{
+    font-size: 1.5rem;
+    padding: 12px;
+    font-family: 'Kalam', cursive;
+}
+
+.btn{
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1rem;
+    color: whitesmoke;
+    background-color: rgb(41, 27, 30);
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: none;
+    border: 0.8px solid rgb(41, 27, 30);
+    font-family: 'Baloo Thambi 2', cursive;
+    transition: all 0.5s ease-in 0s;
+}
+.btn:hover{
+    background-color: whitesmoke;
+    border: 2px solid whitesmoke;
+    color: rgb(41, 27, 30);   
+    font-size: 0.8em; 
+}
+
+
+/* Navigation Bar */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4 ;
+}
+
+/* Logo and Image */
+
+#logo{
+    margin: 5px 10px;
+}
+
+#logo img{
+    height: 70px;
+    width: 70px;
+    border-radius: 3rem;
+}
+
+/* Navbar Style */
+#navbar ul{
+    display: flex;
+    list-style: none;
+    /* flex-wrap: wrap; */
+}
+
+#navbar ul li{
+    font-size: 2 rem;
+}
+
+#navbar ul li a{
+    display: block;
+    padding: 24px;
+    text-decoration: none;
+    color: whitesmoke;
+    border-radius: 30px;
+    border: none;
+    font-family: 'Baloo Thambi 2', cursive;  
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: whitesmoke;
+}
+
+/*home section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 100px;
+    align-items: center;
+    justify-content: center;
+    height: 380px;
+}
+
+
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('olenka-kotyk-9x-PwjxC0Z8-unsplash.jpg') no-repeat center center/cover;
+    height: 70%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+    top: 0px;
+    left: 0px;
+}
+
+#home h1{
+    color: whitesmoke;
+    text-align: center;
+}
+#home p{
+    color: whitesmoke;
+    font-size: 1.5rem;
+    font-family: 'Kalam', cursive;
+}
+
+/* Services container */
+
+#services{
+    margin: 20px;
+    display: flex;
+}
+
+#services .box{
+    border: 2px solid red;
+    padding: 2px;
+    margin: 2px 30px;
+    border-radius: 23px;
+    background-color: rgb(192, 172, 172);
+}
+
+#services .box img{
+    display: block;
+    height: 150px;
+    margin: auto;
+    border-radius: 20px;
+}
+#services .box p{
+    font-family: 'Kalam', cursive;
+}
+
+/* Client Section */
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('annie-spratt-0ZPSX_mQ3xI-unsplash.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 51%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#client{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.client-items{
+    padding: 34px;
+}
+
+#client img{
+    height: 144px;
+}
+
+.facebook{
+    border-radius: 30px;
+}
+
+/* Contact Section */
+
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url('mohammad-alizade-XgeZu2jBaVI-unsplash.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.85;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact form{
+    width: 40%;
+}
+
+#contact-box input, #contact-box textarea{
+    padding: 0.7rem;
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid whitesmoke;
+}
+
+label{
+    font-size: 1.2rem;
+    font-family: 'Kalam', cursive;
+}
+
+/* Footer */
+footer{
+    background-color: rgb(46, 41, 41);
+    color: whitesmoke;
+    padding: 2px 10px;
+}
